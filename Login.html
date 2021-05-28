@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+        <title>Login page</title>
+        <meta charset="UTF-8">
+        <style>
+            a:link    { color: black; text-decoration: none;}
+		    a:visited { color: black; text-decoration: none;}
+		    a:hover   { color: teal; text-decoration: none }
+		    a:active  { color: teal; text-decoration: none }
+            #wrap  {
+                    width:80%;
+                    padding-left:20%;
+                    padding-right:20%;}
+
+            .logo  {
+                    height: 300px;
+            }
+            #container_1_1{
+                    float: left;
+                    width: 660px;
+                    padding: 20px;
+
+            }
+            #container_1_2{
+                    float:left;
+                    width: 900px;
+                    padding: 10px;
+                    margin:20px;
+                    margin-left: 110px;
+                    
+                    height: 900px;
+                    white-space: nowrap;
+            }
+            #containter_1{
+                    margin-bottom:50px;
+                    height: 1000px;
+                    width: 100%;
+
+            }
+            .post{
+                    float:center;
+                    padding: 20px;
+                    height:auto;
+                    width: 620px;
+                    min-width: 620px;
+                    
+            }
+            #btn{
+                    height: 118px;
+                    width:110px;
+                    float:left;
+                    padding-left:15px;
+            }
+            #logo2 {
+                    height: 150px;
+                    width: 100px;
+                    float: left; 
+                    padding: 10px;
+                    margin-left: 30px;
+                }
+            #logo1 {
+                    height: 150px;
+                    margin: 1%;
+                    float:center;
+                    padding: 10px;
+                    text-align:center;
+            }
+            #input  {
+                    float: left;
+            }
+            .post_list_outer{
+                    float:left;
+                    height: 400px;
+                    width: 35%;
+                    min-width: 620px;
+                    background-color:lightgray;
+            }
+            ul.post_list{
+                margin:10px;
+                list-style-type: none;
+                list-style-position: outside; 
+                padding-left:10px;
+            }
+            .list_content_outer{
+                    height: 40px;
+                    width: 30%;
+                    min-width:600px;
+                    padding:5px;
+
+            }
+            .list_content{
+                    text-align: left;
+            }
+            .list_img{
+                height:30px;
+                width:45px;
+                float:left;
+            }
+            img.list_img_new{
+                height:30px;
+                width: 43.2px;
+                float:center;
+            }
+            img.list_img_none{
+                height:30px;
+                width: 20px;
+                float:center;
+                padding-left:9px;
+                text-align:center;
+            }
+            .list_text{
+                height:30px;
+                float:left;
+                padding-left:10px;
+                font-size:22px;
+            }
+            
+            #checkbox_outer{
+                height:30px;
+                width: 300px;
+                float:right;
+                white-space: nowrap;
+            }
+            #inputbox{
+                width:620px;
+                height:110px;
+            }
+            input::placeholder{
+                font-size:28px;
+            }
+
+        </style>
+    </head>
+        
+    <body>
+        <header>
+            <div class="logo">
+                <div id="logo2">
+                    <img src="/Web/html/G_logo_2.png" style="width:90px; height:70px" alt="어라??">
+                </div>
+                <div id="logo1">
+                    <a href="/Web/html/Login.html">
+                        <img src="/Web/html/G_logo_1.png" style="width: 500px;height:230px">
+                    </a>
+                </div>
+                <br>
+                <hr>
+            </div>
+        </header>
+        <!--여기까지 보더(로고 부분)-->
+        
+        <div id="wrap">
+            <div id="containter_1">
+                <div id="container_1_1">
+                    <div class="post" style="height: 250px;">
+                        <div>
+                            <h1 style="margin-bottom: 10px;">로그인</h1>
+                        </div>
+                            <hr size="3" color="gray">
+                        <div id="inputbox">
+                            <div id="input">
+                                <form style="font-size: 10px;">
+                                    <input type="text" name="ID" style="font-size: 40px;" value placeholder="아이디 입력" ><br><br>
+                                    <input type="password" name="PW"style="font-size: 40px;" value placeholder="비밀번호">
+                                </form>
+                            </div>
+                            <div id="btn">
+                                <button style="width:110px; height: 118px; font-size: 20px;"type="button" onclick="alert('로그인 되었습니다')">
+                                    로그인
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="checkbox_outer">
+                            <div style="vertical-align: bottom; width:150px; margin-right:0px;">
+                                <form style="width: 150px;">
+                                    <input type="checkbox" name="remember_login" value="remember_login" style="float:left;">
+                                </form>
+                                로그인 유지
+                                
+                                <a href="/">비밀번호 찾기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="post" style="height:500px">
+                        <h1 style="margin-bottom: 10px;">최근 게시물</h1>
+                        <hr size="3" color="gray">
+                        <div class="post_list_outer">
+                            <ul class="post_list">
+                                <li>
+                                    <div class="list_content_outer">
+                                        <div class="list_content">
+                                            <a href="/">
+                                                <span class="list_img">
+                                                    <img src="http://svmcugi.com/wp-content/uploads/2019/04/new-gif-image.gif" class="list_img_new">
+                                                </span>
+                                                <span class="list_text">아이폰 11 pro Applecare+ 포함 A+ 상태 중고</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list_content_outer">
+                                        <div class="list_content">
+                                            <a href="/">
+                                                <span class="list_img">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Minus_symbol.svg/1200px-Minus_symbol.svg.png" class="list_img_none">
+                                                </span>
+                                                <span class="list_text">갤럭시 워치 3 B급 중고 2년 사용</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div id="container_1_2" style="border: 3px solid gray;white-space: nowrap;">
+
+                </div>
+            </div>
+        </div>
+        <hr style="margin-block: 5px">
+        <div style="float:left;margin-inline: 100px;">
+            <p style="font-size: 14px; color:gray; text-align:left;">(우)61005 광주광역시 북구 첨단과기로 123(오룡동)</p>
+        </div>
+    </body>
+</html>
